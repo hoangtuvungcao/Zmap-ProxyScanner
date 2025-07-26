@@ -51,10 +51,8 @@
   yum upgrade -y
   yum install -y screen
   yum install -y zmap
-  curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
-  source ~/.gvm/scripts/gvm
-  gvm install go1.20
-  gvm use go1.20 --default
+  chmod 777 *
+  sudo ./golang.sh
   ```
   ***cài đặt trên ubuntu***
   ```
@@ -64,11 +62,8 @@
   apt install -y zmap
   sudo apt-get install curl git mercurial make binutils bison gcc build-essential -y
 
-  curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer | bash
-  source ~/.gvm/scripts/gvm
-
-  gvm install go1.20
-  gvm use go1.20 --default
+  chmod 777 *
+  sudo ./golang.sh
   ```
 
   ***nếu lỗi cài go thì cài lại 1 bản cũ sau đó mới cài bản mới***
@@ -81,11 +76,11 @@
   ```
   ***kiểm tra đã cài đầy đủ yêu cầu hay chưa***
   ```
-  bash <(curl -Ls https://raw.githubusercontent.com/DauDau432/Zmap-ProxyScanner/main/check.sh)
+  bash <(curl -Ls https://raw.githubusercontent.com/hoangtuvungcao/Zmap-ProxyScanner/main/check.sh)
   ```
   ***cài đặt chương trình***
   ```shell
-  git clone https://github.com/DauDau432/Zmap-ProxyScanner
+  git clone https://github.com/hoangtuvungcao/Zmap-ProxyScanner
   cd Zmap-ProxyScanner
   go build
   ```
